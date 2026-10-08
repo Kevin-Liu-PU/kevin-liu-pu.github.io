@@ -25,7 +25,8 @@ strong { font-weight: 700; }
 .project-visual img { display: block; width: 100%; height: auto; }
 .project-visual figcaption { margin-top: 8px; color: #626262; font-size: 12px; line-height: 1.5; text-align: center; }
 .photo-credit { display: block; margin-top: 4px; font-size: 10px; line-height: 1.5; }
-.xinu-schematic { display: block; width: 100%; height: auto; margin-top: 8px; }
+.xinu-visual { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; gap: 12px; }
+.xinu-schematic { display: block; width: 100%; height: auto; }
 .project-summary { min-width: 0; }
 .project-summary .project-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 6px; font-size: 13px; line-height: 1.5; }
 .project-visual video { display: block; width: 100%; height: auto; background: #000; }
