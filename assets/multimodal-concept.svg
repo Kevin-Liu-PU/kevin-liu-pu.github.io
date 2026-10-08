@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="114" viewBox="0 0 240 114" role="img" aria-labelledby="concept-title concept-description">
+  <title id="concept-title">Multimodal learning and control concept</title>
+  <desc id="concept-description">Conceptual information flow from audio, vision, force/torque, and robot state toward learning and control and bowing action. This schematic indicates a research direction, not a fixed or implemented architecture.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 5 6" refX="4.5" refY="3" markerWidth="5" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L5 3 L0 6 Z" fill="#1772d0"/>
+    </marker>
+  </defs>
+  <rect width="240" height="114" fill="#fff"/>
+  <g fill="none" stroke="#1772d0" stroke-width="1.1" stroke-linejoin="round">
+    <path d="M79 18 H88 V96 H79 M79 44 H88 M79 70 H88"/>
+    <path d="M88 57 H97" marker-end="url(#arrow)"/>
+    <path d="M175 57 H188" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#f1f6fb" stroke="#d3e0ed" stroke-width="1">
+    <rect x="2.5" y="7.5" width="76" height="21" rx="3"/>
+    <rect x="2.5" y="33.5" width="76" height="21" rx="3"/>
+    <rect x="2.5" y="59.5" width="76" height="21" rx="3"/>
+    <rect x="2.5" y="85.5" width="76" height="21" rx="3"/>
+    <rect x="99.5" y="34.5" width="75" height="45" rx="3"/>
+    <rect x="190.5" y="36.5" width="47" height="41" rx="3"/>
+  </g>
+  <g fill="#333" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">
+    <text x="40.5" y="22">Audio</text>
+    <text x="40.5" y="48">Vision</text>
+    <text x="40.5" y="74">Force/torque</text>
+    <text x="40.5" y="100">Robot state</text>
+    <text x="137" y="53">Learning &amp;</text>
+    <text x="137" y="67">control</text>
+    <text x="214" y="53">Bowing</text>
+    <text x="214" y="67">action</text>
+  </g>
+</svg>
