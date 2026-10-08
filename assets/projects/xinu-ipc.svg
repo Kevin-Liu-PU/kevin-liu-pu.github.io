@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="148" viewBox="0 0 480 148" role="img" aria-labelledby="title desc">
+<title id="title">Process synchronization and IPC schematic</title>
+<desc id="desc">Conceptual message exchange between two processes. This diagram illustrates synchronization and IPC without specifying an implementation or API.</desc>
+<defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6Z" fill="#1772d0"/></marker></defs>
+<g font-family="Lato, Arial, sans-serif" text-anchor="middle">
+<text x="240" y="23" font-size="22" fill="#626262">IPC schematic</text>
+<rect x="5" y="47" width="146" height="68" rx="8" fill="#f1f6fb" stroke="#b9ccdf" stroke-width="2"/>
+<rect x="329" y="47" width="146" height="68" rx="8" fill="#f1f6fb" stroke="#b9ccdf" stroke-width="2"/>
+<text x="78" y="88" font-size="24" fill="#333">Process A</text>
+<text x="402" y="88" font-size="24" fill="#333">Process B</text>
+<text x="240" y="66" font-size="21" fill="#333">Messages</text>
+<path d="M166 81H314" fill="none" stroke="#1772d0" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M314 99H166" fill="none" stroke="#1772d0" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="240" y="140" font-size="21" fill="#626262">Synchronization</text>
+</g></svg>
