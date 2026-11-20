@@ -1,0 +1,23 @@
+.tactile-project { max-width: 760px; }
+.tactile-project .back-link { margin-bottom: 20px; }
+.tactile-project h2 { margin-bottom: 14px; }
+.conditions { margin: 22px 0 0; padding: 0; border: 0; min-inline-size: 0; }
+.conditions legend { margin-bottom: 8px; padding: 0; font-weight: 700; }
+.conditions > label { margin: 0 14px 0 0; cursor: pointer; }
+.conditions > input { margin: 0 5px 0 0; accent-color: #1772d0; }
+.conditions > input:focus-visible { outline: 2px solid #1772d0; outline-offset: 3px; }
+.split-results { margin-top: 16px; padding: 18px; border: 1px solid #dedede; border-radius: 4px; background: #fafafa; }
+.result-surface, .result-participant { display: none; }
+#split-surface:checked ~ .split-results .result-surface,
+#split-participant:checked ~ .split-results .result-participant { display: block; }
+.scores { display: grid; gap: 7px; margin: 12px 0; }
+.scores > div { display: grid; grid-template-columns: minmax(0, 173px) minmax(0, 1fr); gap: 12px; align-items: center; }
+.scores dd { display: grid; grid-template-columns: minmax(0, 1fr) 4ch; gap: 14px; align-items: center; margin: 0; font-variant-numeric: tabular-nums; }
+.scores strong { text-align: right; }
+.scores meter { width: 100%; height: 16px; accent-color: #1772d0; }
+.scores meter::-webkit-meter-optimum-value { background: #1772d0; }
+.scores meter::-moz-meter-bar { background: #1772d0; }
+@media (max-width: 475px) {
+  .scores > div { grid-template-columns: minmax(0, 1fr); gap: 1px; }
+  .tactile-project .back-link { margin-bottom: 14px; }
+}
