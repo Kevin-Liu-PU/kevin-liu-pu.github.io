@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A tactile sensing project exploring when force and thermal signals help recognize materials.">
+  <meta name="description" content="Experiments comparing force and thermal signals for tactile material recognition.">
   <title>Thermal and Force Sensing for Material Recognition | Zixian Liu</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
@@ -15,48 +15,18 @@
   <header>
     <p class="back-link"><a href="./#thermal-tactile-sensing">← Back to Research</a></p>
     <h1>Thermal and Force Sensing for Material Recognition</h1>
-    <p class="meta">Dalian University of Technology &middot; With Prof. Bo Zhang &middot; Mar–Dec 2025</p>
+    <p class="meta">Mar–Dec 2025</p>
   </header>
-  <section aria-labelledby="question-heading">
-    <h2 id="question-heading">What can temperature add to touch?</h2>
-    <p>A fingertip can exert similar force on two surfaces even when one draws heat away faster. I wanted to see when that extra information could help a model tell materials apart.</p>
-    <p>I first compared mechanical and thermal signals across tactile datasets. On CLAMP, an overall improvement hid drops in some groups. I used CLAMP and PHAC-2 to probe where thermal signals helped, then used SENS3 to compare force with force plus temperature change and heat flux on the same human-contact task.</p>
+  <section aria-labelledby="approach-heading">
+    <h2 id="approach-heading">Approach</h2>
+    <p>I compared mechanical and thermal signals on CLAMP, PHAC-2, and SENS3. An overall gain on CLAMP masked declines in some groups. To test the value of thermal cues more directly, I compared force-only and force-plus-thermal inputs on the same three-class recognition task in SENS3.</p>
   </section>
-  <section id="demo" aria-labelledby="demo-heading">
-    <h2 id="demo-heading">Demo: change what the model has to generalize to</h2>
-    <p>Switch evaluation settings to explore results from a three-class pilot on 38 fingertip contact recordings across 19 surfaces. This visualizes recorded evaluation results; it does not run a live model.</p>
-    <fieldset class="conditions">
-      <legend>Evaluation setting</legend>
-      <input type="radio" name="split" value="surface" id="split-surface" checked>
-      <label for="split-surface">Unseen surfaces</label>
-      <input type="radio" name="split" value="participant" id="split-participant">
-      <label for="split-participant">Unseen participant</label>
-      <div class="split-results">
-        <div class="result-surface">
-          <h3>Recognize surfaces held out of training</h3>
-          <p class="meta">Macro recall (%)</p>
-          <dl class="scores">
-            <div><dt>Force only</dt><dd><meter min="0" max="100" value="38.3" aria-label="Force only macro recall"></meter><strong aria-hidden="true">38.3%</strong></dd></div>
-            <div><dt>Force + thermal</dt><dd><meter min="0" max="100" value="95.1" aria-label="Force plus thermal macro recall"></meter><strong aria-hidden="true">95.1%</strong></dd></div>
-          </dl>
-          <p>Adding temperature change and heat flux improved macro recall by 56.8 percentage points in this evaluation.</p>
-        </div>
-        <div class="result-participant">
-          <h3>Train on one participant, test on the other</h3>
-          <p class="meta">Macro recall (%) &middot; force + thermal</p>
-          <dl class="scores">
-            <div><dt>Participant split 1</dt><dd><meter min="0" max="100" value="57.5" aria-label="Participant split 1 macro recall"></meter><strong aria-hidden="true">57.5%</strong></dd></div>
-            <div><dt>Participant split 2</dt><dd><meter min="0" max="100" value="69.4" aria-label="Participant split 2 macro recall"></meter><strong aria-hidden="true">69.4%</strong></dd></div>
-          </dl>
-          <p>The participant splits also used less training data, so this comparison does not isolate the effect of changing participants.</p>
-        </div>
-      </div>
-    </fieldset>
-    <p class="meta">Macro recall gives each material class equal weight. Dataset: <a href="https://www.sens3.net/about" rel="noopener noreferrer">SENS3, Balasubramanian, Kodak, and Vardar</a>.</p>
-  </section>
-  <section aria-labelledby="takeaway-heading">
-    <h2 id="takeaway-heading">What I took away</h2>
-    <p>Thermal cues helped on this surface split, but the same score did not carry over to the participant splits. Before relying on those signals in a robot, I would test whether they still help when contact and sensing conditions change.</p>
+  <section id="demo" aria-labelledby="results-heading">
+    <h2 id="results-heading">Experimental results</h2>
+    <p>The SENS3 pilot used 38 fingertip contact recordings across 19 surfaces. On surfaces held out of training, adding temperature change and heat flux increased macro recall from 38.3% to 95.1%.</p>
+    <figure class="tactile-results"><img src="assets/projects/thermal-tactile-sensing.svg" alt="On held-out surfaces, macro recall was 38.3% with force only and 95.1% with force plus thermal signals." width="480" height="222"><figcaption>Macro recall weights each material class equally.</figcaption></figure>
+    <p>With force and thermal inputs, macro recall was 57.5% and 69.4% on two splits that held out a participant. Those splits used less training data, so the comparison does not isolate the effect of changing participants.</p>
+    <p class="meta">Dataset: <a href="https://www.sens3.net/about">SENS3 (Balasubramanian, Kodak, and Vardar)</a>.</p>
   </section>
 </main>
 </body>

@@ -1,11 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 272" role="img" aria-labelledby="title desc">
-  <title id="title">Force and heat at contact</title>
-  <desc id="desc">A fingertip touches a flat surface. A blue arrow marks force and orange waves mark heat flow.</desc>
-  <rect x="1" y="1" width="478" height="270" rx="8" fill="#fafafa" stroke="#dedede" stroke-width="2"/>
-  <path d="M170 44h21c36 0 69 33 69 70v7c0 24-18 46-43 46-22 0-40-17-40-40V96h-13" fill="#eaf0f5" stroke="#5a6f80" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="105" y="169" width="270" height="42" rx="3" fill="#e1e5e8" stroke="#7f8991" stroke-width="3"/>
-  <path d="M115 195l15-15m16 15 15-15m16 15 15-15m16 15 15-15m16 15 15-15m16 15 15-15m16 15 15-15m16 15 15-15m16 15 15-15" stroke="#bac3ca" stroke-width="2"/>
-  <path d="M154 100v46m-9-9 9 9 9-9" fill="none" stroke="#1772d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M275 153q10-13 0-26t0-26m17 52q10-13 0-26t0-26m17 52q10-13 0-26t0-26" fill="none" stroke="#a5552b" stroke-width="3" stroke-linecap="round"/>
-  <g font-family="Arial,sans-serif" font-size="22"><text x="79" y="124" fill="#145dab">Force</text><text x="324" y="133" fill="#85421f">Heat</text><text x="240" y="241" text-anchor="middle" fill="#48545d">Material surface</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 222" role="img" aria-labelledby="title desc">
+  <title id="title">Macro recall on held-out surfaces</title>
+  <desc id="desc">The SENS3 pilot measured 38.3 percent macro recall with force alone and 95.1 percent with force plus thermal cues.</desc>
+  <rect width="480" height="222" fill="white"/>
+  <path d="M158 45v125m138-125v125m138-125v125" fill="none" stroke="#d4d9dd"/>
+  <path d="M158 170h276" fill="none" stroke="#69727a"/>
+  <rect x="158" y="51" width="105.708" height="32" fill="#9ba8b3"/>
+  <rect x="158" y="111" width="262.476" height="32" fill="#31648e"/>
+  <g font-family="Arial, sans-serif" font-size="21" fill="#252a2e">
+    <text x="146" y="74" font-size="19" text-anchor="end">Force only</text>
+    <text x="146" y="134" font-size="19" text-anchor="end">Force + thermal</text>
+    <text x="273" y="74">38.3%</text>
+    <text x="411" y="134" text-anchor="end" fill="white">95.1%</text>
+    <text x="158" y="193" text-anchor="middle">0</text>
+    <text x="296" y="193" text-anchor="middle">50</text>
+    <text x="434" y="193" text-anchor="middle">100</text>
+    <text x="296" y="218" text-anchor="middle">Macro recall (%)</text>
+  </g>
 </svg>
